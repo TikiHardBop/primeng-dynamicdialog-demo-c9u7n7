@@ -1,0 +1,17 @@
+<p-toast></p-toast>
+
+
+<div class="card">
+<h5>Single</h5>
+<p-treeSelect [(ngModel)]="selectedNode" [options]="nodes1" placeholder="Select Item"></p-treeSelect>
+
+<h5>Multiple</h5>
+<p-treeSelect [(ngModel)]="selectedNodes1" [options]="nodes2" [metaKeySelection]="false" selectionMode="multiple"
+    placeholder="Select Item"></p-treeSelect>
+
+<h5>Checkbox</h5>
+<p-treeSelect [(ngModel)]="selectedNodes2" [options]="nodes3" display="chip" [metaKeySelection]="false"
+    selectionMode="checkbox" placeholder="Select Item"></p-treeSelect>
+</div>
+
+<button type="button" (click)="show()" pButton icon="pi pi-info-circle" label="Show"></button>
